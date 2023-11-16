@@ -1,0 +1,144 @@
+$theme-colors: (
+    "primary": #5265E1,
+    "secondary": #FA5959,
+    "dark": rgba(24, 33, 82, 0.589),
+);
+
+$col-titles: #262642;
+$secondary: #FA5959;
+
+$enable-negative-margins: true;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// GENERAL
+
+.btn {
+    font-size: 0.7rem;
+}
+
+.border-top-opacity {
+    border-top: 1px solid rgba(255, 255, 255, 0.122);  
+}
+
+h1,
+h2,
+h3 {
+    color: $col-titles;
+}
+
+p {
+    color: #a1a1ab;
+    font-size: 0.8rem;
+}
+
+// HERO 
+
+ #first-pill {
+    transform: rotate(180deg);
+ }
+
+// FEATURES
+
+.horitzontal-line {
+    width: 100%;
+    border-top: 1px solid grey;
+    margin: 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    border: none;
+    border-bottom: 4px solid #FB5859;
+}
+
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-item.show .nav-link {
+    border: none;
+    color: grey;
+    padding: 0.9rem;
+}
+
+.pill-features {
+    width: 90%;
+}
+
+.img-features {
+    width: 90%;
+}
+
+
+// CARDS
+
+@media (min-width: 768px) {
+    #firefox-card {
+        margin-top: 4rem;
+       
+    }
+
+    #opera-card {
+        margin-top: 8rem;
+    }
+}
+
+.card-img-top {
+    width: 40% !important;
+}
+
+
+// ACCORDION (FAQS)
+
+    // Accordion bootstrap override:
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: url("/IMAGES/Imagenes/icon-arrow.svg");
+}
+
+.accordion-button:not(.collapsed) {
+background-color: white;
+}
+
+#accordionFlushExample {
+    border-top: 1px solid #DEE2E6;
+}
+
+// FOOTER
+
+#p-footer {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+}
+
+
+    //Form
+
+.invalid-feedback {
+    background-color: $secondary;
+    color: white;
+    font-style: italic;
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 0;
+}
+
+.was-validated .form-control:invalid {
+    border: 3px solid $secondary;
+}
+
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    background-image: url(/Images-s1.2/Imagenes/icon-error.svg);
+    
+}
+
+#email::placeholder {
+    color: #a1a1ab;
+    font-size: 0.8rem;
+
+}
+

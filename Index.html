@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bookmark 2</title>
+</head>
+
+<body>
+    <div class="overflow-hidden">
+        <!-- HEADER -->
+        <div class="row mt-3">
+            <div class="col-1 px-0"></div>
+            <div class="col-10 px-0">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/IMAGES/Imagenes/logo-bookmark.svg" alt="logo-bookmark">
+                        </a>
+                        <!-- offcanvas -->
+                        <div class="offcanvas-display d-md-none">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop" id="hamburger-icon">
+                                <img src="/IMAGES/Imagenes/icon-hamburger.svg">
+
+                            </button>
+
+                            <div class="offcanvas offcanvas-top bg-dark vh-100 opacity-75" tabindex="-1"
+                                id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+
+                                <!-- offcanvas header -->
+                                <div class="offcanvas-header d-flex flex-row justify-content-between">
+                                    <img class="offcanvas-title w-50" src="/IMAGES/Imagenes/logo-bookmark-white.svg"
+                                        id="offcanvasNavbarLabel" alt="logo-bookmark">
+                                    <button type="button" class="border-0 bg-dark" data-bs-dismiss="offcanvas"
+                                        aria-label="Close">
+                                        <img src="/IMAGES/Imagenes/icon-close.svg">
+                                    </button>
+                                </div>
+                                <div class="offcanvas-body align-items-stretch">
+                                    <ul class="navbar-nav align-content-center">
+                                        <li class="nav-item border-top-opacity">
+                                            <a class="nav-link text-white text-center" href="#">FEATURES</a>
+                                        </li>
+                                        <li class="nav-item border-top-opacity">
+                                            <a class="nav-link text-white text-center" href="#">PRICING</a>
+                                        </li>
+                                        <li class="nav-item border-top-opacity">
+                                            <a class="nav-link text-white text-center" href="#">CONTACT</a>
+                                        </li>
+                                        <li class="nav-item border-top-opacity d-grid pt-3 mt-2">
+                                            <button type="button" class="btn border fw-bold text-white"
+                                                id="nav-btn">LOGIN</button>
+                                        </li>
+                                    </ul>
+                                    <ul class="navbar-nav d-flex flex-row gap-1 justify-content-center mt-5 pt-5">
+                                        <li class="nav-item">
+                                            <button type="button" class="btn" id="nav-btn">
+                                                <img src="/IMAGES/Imagenes/icon-facebook.svg" alt="facebook-icon">
+                                            </button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn" id="nav-btn">
+                                                <img src="/IMAGES/Imagenes/icon-twitter.svg" alt="facebook-icon">
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- md-navbar -->
+
+                        <div class="collapse navbar-collapse small" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto gap-2  align-items-end small me-5">
+                                <li class="nav-item pe-2">
+                                    <a class="nav-link" href="#">FEATURES</a>
+                                </li>
+                                <li class="nav-item pe-2">
+                                    <a class="nav-link" href="#">PRICING</a>
+                                </li>
+                                <li class="nav-item pe-4">
+                                    <a class="nav-link" href="#">CONTACT</a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <button type="button" class="btn btn-secondary text-white px-4 mt-1"
+                                        id="nav-btn">LOGIN</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            </nav>
+            <div class="col-1 px-0"></div>
+        </div>
+        <!-- MAIN -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <!-- HERO -->
+                <div class="row mt-5">
+                    <!-- text column -->
+                    <div class="col-12 col-md-6 mt-5 mt-md-4 order-1 order-md-0">
+                        <h1 class="text-center text-md-start mt-md-4">A Simple Bookmark <br> Manager</h1>
+                        <p class="text-center text-md-start me-md-3">A clean and sample interface to organize
+                            your favourite websites. Open a new
+                            browser tab and see your sites load instantly. Try it for free.</p>
+                        <div class="d-flex justify-content-center justify-content-md-start mt-4 gap-2">
+                            <button type="button" class="btn btn-primary shadow py-2 px-md-2 px-3">Get it on
+                                Chrome</button>
+                            <button type="button" class="btn btn-light shadow py-2 px-md-2  px-3">Get it on
+                                Firefox</button>
+                        </div>
+                    </div>
+
+                    <!-- image column -->
+                    <div class="position-relative col-12 col-md-6">
+                        <img class="img-fluid col-12 offset-4 mt-5" id="first-pill"
+                            src="/IMAGES/Imagenes/pill-back-features.svg">
+                        <img src="/IMAGES/Imagenes/illustration-hero.svg" id="hero-img"
+                            class="img-fluid position-absolute top-0 start-0 w-100" alt="screen-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
