@@ -4,8 +4,9 @@ $theme-colors: (
     "dark": rgba(24, 33, 82, 0.589),
 );
 
-$col-titles: #262642;
+$primary: #5265E1;
 $secondary: #FA5959;
+$col-titles: #262642;
 
 $enable-negative-margins: true;
 
@@ -132,7 +133,7 @@ background-color: white;
 
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-    background-image: url(/Images-s1.2/Imagenes/icon-error.svg);
+    background-image: url("/IMAGES/Imagenes/icon-error.svg");
     
 }
 
@@ -141,4 +142,34 @@ background-color: white;
     font-size: 0.8rem;
 
 }
+
+// HOVERS: 
+    
+.btn-primary:hover {
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: $secondary !important;
+    border: 1px solid $secondary;
+}
+
+.btn-light:hover {
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+}
+
+a.nav-link:hover, button.nav-link:hover, .accordion-button:hover  {
+    color: $secondary !important;
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("/IMAGES/Imagenes/icon-arrow-red.svg") !important;
+    fill: $secondary !important;
+   }
 
